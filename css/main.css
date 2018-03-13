@@ -20,6 +20,7 @@ display:block;
 nav{
   background-color: #ffffff;
   width: 100%
+  clear:both;
 }
 nav a{
   color: #420094;
@@ -61,6 +62,16 @@ footer a{
   font-family: 'Comfortaa', cursive;
   color: #ffffff;
 }
+#burger div{
+  width: 35px;
+  height: 5px;
+  background: #555596;
+  margin: 5px;
+}
+#burger{
+  float: right;
+  visibility: hidden;
+}
 #submit{
   color: #555596;
   background: white;
@@ -77,6 +88,7 @@ footer a{
 .imgHeader{
   height: 300px;
   padding-bottom: 20px;
+  clear: both;
 }
 .imgHeader h1{
   font-family: 'Gloria Hallelujah', cursive;
@@ -547,6 +559,57 @@ footer a{
   #homeHeadGallery{
     height: 1650px;
   }
+}
+
+/*Mobile menu query*/
+@media screen and (max-width:700px){
+.burger-nav{
+  display: block;
+  height: 40px;
+  width: 30px;
+  float: right;
+  //background: url(images/ui/burger.png) no-repeat 98% center;
+  cursor: pointer;
+}
+nav ul{
+  list-style: none;
+  overflow: hidden;
+  height: 0;
+  margin: 0px auto;
+  width: 100%;
+  transition: 1s;
+}
+nav ul.open{
+  height: auto;
+  margin: 0px auto;
+  padding-top: 40px;
+  transition: 1s;
+}
+nav ul li{
+  float: none;
+  text-align: left;
+  margin:0;
+  display: block;
+  text-align: center;
+  padding-top: 40px;
+  width: 100%;
+}
+nav ul li a{
+    border-bottom: 1px solid #404040;
+    display: block;
+    margin: 0;
+    color: #420094;
+}
+#burger{
+  visibility: visible;
+  margin-top: 30px;
+  padding-right: 25px;
+}
+#logo{
+  width:90px;
+  float: left;
+}
+
 }
 
 @media screen and (min-width:760px){
