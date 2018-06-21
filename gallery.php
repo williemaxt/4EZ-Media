@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Author: William    -->
-<!-- Date:  Mon-Dec 11-2017     -->
+<!-- Date:  Wed-June-20-2018     -->
 <!-- Description: 4EZ Media Index Page-->
 <html>
   <head>
@@ -41,18 +41,17 @@
       <div id="homeHeadGallery" class="">
         <h1>More Shots</h1>
         <ul>
-          <li><img src="images/tiger-300.png" alt=""></li>
-          <li><img src="images/kid-300.png" alt=""></li>
-          <li><img src="images/zombie-300.png" alt=""></li>
-          <li><img src="images/kids-300.png" alt=""></li>
-          <li><img src="images/oneboy-300.png" alt=""></li>
-          <li><img src="images/zomgirl-300.png" alt=""></li>
-          <li><img src="images/d1-300.png" alt=""></li>
-          <li><img src="images/rboy-300.png" alt=""></li>
-          <li><img src="images/ladies-300.png" alt=""></li>
-          <li><img src="images/dude-300.png" alt=""></li>
-          <li><img src="images/runway-300.png" alt=""></li>
-          <li><img src="images/prom-300.png" alt=""></li>
+          <!--Adding the images Via PHP foreach loop-->
+          <?php
+          $dir = glob('uploaded-images/{*.jpg,*.png,*.jpeg}',GLOB_BRACE);
+          foreach ($dir as $key => $value) {
+            ?>
+
+                <li><img src = "<?php echo $value; ?>" alt="<?php echo $value; ?>"></li>
+
+            <?php
+          }
+            ?>
         </ul>
       </div>
     </div>
