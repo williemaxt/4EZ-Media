@@ -151,7 +151,27 @@ footer a{
   margin: 0px auto;
 }
 
+/*Scroll Bar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #420094;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #262626;
+}
 
 /*IDs*/
 #homeHead{
@@ -167,6 +187,10 @@ footer a{
   background-size:cover;
   margin-left: -8px;
   margin-right: -8px;
+}
+#homeHeadGallery ul{
+  overflow-y:scroll;
+  height: 90%;
 }
 #homeHeader h1{
   font-size: 2em;
