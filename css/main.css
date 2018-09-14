@@ -6,6 +6,7 @@
 body{
   align-items: center;
   margin-bottom: -5px;
+  margin-top: 190px;
 }
 #wrapper{
 width: 1200px;
@@ -16,6 +17,13 @@ height: auto;
 width: 100px;
 margin: 0px auto;
 display:block;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
 }
 nav{
   background-color: #ffffff;
@@ -113,9 +121,10 @@ footer a{
 .form input{
   width: 90%;
   border-radius: 5px;
+  border: none;
   height: 25px;
   margin: 5px auto;
-  display:block;
+  display: block;
 }
 .form textarea{
   width: 90%;
@@ -633,7 +642,9 @@ nav ul li a{
   width:90px;
   float: left;
 }
-
+body{
+  margin-top: 100px;
+}
 }
 
 @media screen and (min-width:760px){

@@ -65,7 +65,3 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="js/menu.js"></script>
 </html>
-<<<<<<< HEAD
-=======
-
->>>>>>> 7eaea37a01dc496c0ceafa279f5788ce020df961
