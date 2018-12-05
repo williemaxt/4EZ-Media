@@ -36,15 +36,16 @@
       <p id="bookingText">Now you can book a reservation even faster</p>
       <div id="booking" class="form">
         <h1>Contact Us Quickly</h1>
+        <div id="email_prompt"></div>
         <!-- form to contact client directly from the site-->
-        <form name="contactform" id="contactform" action="send_form_email.php" method="post">
-    <input id="first_name" type="text" name="first_name" placeholder="First Name">
-    <input id="last_name" type="text" name="last_name" placeholder="Last Name">
-    <input id="email" type="text" name="email" placeholder="email@email.com">
-    <input id="telephone" type="tel" name="telephone" placeholder="000-000-0000">
-    <textarea id="comments" name="comments" rows="5" cols="37" spellcheck="true" placeholder="Photo shoot at my wedding..."></textarea>
-    <input id="submit" type="submit" name="submit" value="submit">
-</form>
+        <form name="contactform" id="contactform" onsubmit="return submit_form();">
+          <input id="first_name" type="text" name="first_name" placeholder="First Name">
+          <input id="last_name" type="text" name="last_name" placeholder="Last Name">
+          <input id="email" type="text" name="email" placeholder="email@email.com">
+          <input id="telephone" type="number" name="telephone" placeholder="000-000-0000">
+          <textarea id="comments" name="comments" rows="5" cols="37" spellcheck="true" placeholder="Photo shoot at my wedding..."></textarea>
+          <button id="submit" type="submit" name="submit">Submit</button>
+        </form>
       </div>
     </div>
   <footer>
@@ -54,6 +55,7 @@
     <h1><a href="http://611.solutions">Site made by 611 Solutions, LLC</a></h1>
 </footer>
   </body>
+  <script src="js/email-form.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="js/menu.js"></script>
 </html>

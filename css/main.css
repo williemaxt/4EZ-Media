@@ -4,9 +4,7 @@
 /*font-family: 'Comfortaa', cursive;*/
 /*font-family: 'Permanent Marker', cursive;*/
 body{
-  align-items: center;
-  margin-bottom: -5px;
-  margin-top: 190px;
+  margin: 0;
 }
 #wrapper{
 width: 1200px;
@@ -21,17 +19,16 @@ display:block;
 header{
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   background: #fff;
+  box-shadow: 0 0 10px #333;
 }
 nav{
   background-color: #ffffff;
-  width: 100%
-  clear:both;
+  width: 100%;
 }
 nav a{
-  color: #420094;
+  color: #2F358E;
   text-decoration: none;
   font-weight: bold;
   font-family: 'Comfortaa', cursive;
@@ -46,8 +43,8 @@ nav p:hover{
 }
 nav li{
   display: inline-block;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 5px;
+  margin-right: 5px;
   width: 110px;
 }
 nav ul{
@@ -56,24 +53,15 @@ nav ul{
   padding: 0;
 }
 footer{
-  height: 250px;
-  background-color: #555596;
-  margin-left: -8px;
-  margin-right: -8px;
+  background: #2F358E;
+  padding: 50px;
   font-family: 'Comfortaa', cursive;
-  padding-top: 20px;
-  color: #ffffff;
-  text-align: center;
-}
-footer a{
-  text-decoration: none;
-  font-family: 'Comfortaa', cursive;
-  color: #ffffff;
+  color: #fff;
 }
 #burger div{
   width: 35px;
   height: 5px;
-  background: #555596;
+  background: #2F358E;
   margin: 5px;
 }
 #burger{
@@ -81,7 +69,7 @@ footer a{
   visibility: hidden;
 }
 #submit{
-  color: #555596;
+  color: #2F358E;
   background: white;
   font-size: 2em;
   height: 60px;
@@ -94,9 +82,8 @@ footer a{
   color: #000000;
 }
 .imgHeader{
-  height: 300px;
+  height: 400px;
   padding-bottom: 20px;
-  clear: both;
 }
 .imgHeader h1{
   font-family: 'Gloria Hallelujah', cursive;
@@ -105,36 +92,49 @@ footer a{
 }
 .imgHeader p{
   color: #ffffff;
-  padding: 5%;
+  padding: 10px;
   text-align: center;
   font-size: 1em;
   font-family: 'Comfortaa', cursive;
 }
 .form{
-  background: #555596;
-  height: 450px;
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 15px;
   width: 100%;
 }
 .form input{
-  width: 90%;
+  width: 100%;
   border-radius: 5px;
-  border: none;
-  height: 25px;
+  border: 2px solid #333;
+  height: 40px;
   margin: 5px auto;
   display: block;
+  font-size: 1.2em;
+  padding: 3px;
+  outline: none;
 }
 .form textarea{
-  width: 90%;
+  width: 100%;
   border-radius: 5px;
   margin: 5px auto;
   display:block;
+  outline: none;
+  font-size: 1em;
+  border: 2px solid #333;
+}
+.form button{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  padding: 3px;
+  border: none;
+  background: green;
+  border-radius: 15px;
 }
 .aboutus h1{
   font-family: 'Permanent Marker', cursive;
-  color: #420094;
+  color: #2F358E;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -159,50 +159,84 @@ footer a{
   height: auto;
   margin: 0px auto;
 }
-
-/*Scroll Bar*/
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
+.info-panel{
+    margin-bottom: 120px;
 }
-
-/* Track */
-::-webkit-scrollbar-track {
-    border-radius: 10px;
+.center-text-blue{
+  text-align: center;
+  color: #2F358E;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3em;
+  margin-bottom: 100px;
 }
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #420094;
-    border-radius: 10px;
+#right.info-panel{
+  color: #333;
+  font-family: 'Comfortaa', cursive;
+  text-align: right;
+  display: block;
+  font-size: 1.5em;
 }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #262626;
+#right.info-panel img{
+  float: right;
+  margin: 10px;
 }
-
+#right.info-panel p{
+  margin: 10px;
+}
+#left.info-panel{
+  color: #333;
+  font-family: 'Comfortaa', cursive;
+  text-align: left;
+  font-size: 1.5em;
+}
+#left.info-panel img{
+  float: left;
+  margin: 10px;
+}
+.ig-pic{
+  max-width: 300px;
+  display: inline-block;
+  color: #333;
+  margin: 20px;
+  font-family: 'Comfortaa', cursive;
+  border: 1px solid #808080;
+  box-shadow: 0 0 10px #333;
+  border-radius: 6px;
+  font-size: .7em;
+}
+.ig-pic a{
+  text-decoration: none;
+  color: #2F358E;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.ig-pic hr{
+  max-width: 120px;
+}
+.in-pic p{
+  margin: 5px;
+}
 /*IDs*/
 #homeHead{
   background-image: url(images/butterfly.jpg);
-  margin-top: -2%;
+  margin-top: 150px;
   background-size:cover;
-  margin-left: -8px;
-  margin-right: -8px;
+}
+#homeHead h1{
+  padding-top: 100px;
+  font-size: 3em;
+  font-family: 'Comfortaa', cursive;
 }
 #homeHeadService{
   background-image: url(images/camera1.png);
-  margin-top: -2%;
   background-size:cover;
-  margin-left: -8px;
-  margin-right: -8px;
-}
-#homeHeadGallery ul{
-  overflow-y:scroll;
-  height: 90%;
 }
 #homeHeader h1{
   font-size: 2em;
+}
+#homeHeader ul{
+  display: block;
+  padding-left: 0;
 }
 #homeHead,
 #homeHeadService,
@@ -219,40 +253,11 @@ footer a{
 #homeHeader p{
   font-size: 1.5em;
 }
-#homeHead2{
-  background-color: #ffffff;
-  text-align: center;
-}
-#homeHead2 h1{
-  color: #420094;
-  font-family: 'Permanent Marker', cursive;
-}
-#homeHead2 img{
-  border-radius: 400px;
-}
-#homeHead2 ul{
-  list-style: none;
-  width:450px;
-  margin:auto;
-  padding: 0px;
-  display:block;
-}
-#homeHead2 li{
-  display: inline-block;
-  margin: 5%;
-  padding: 10px;
-  font-family: 'Comfortaa', cursive;
-}
-#homeHeadGallery li{
-  width: 280px;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
 #homeHeadGallery img{
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 #homeHead3 h1{
   color: #420094;
@@ -263,67 +268,56 @@ footer a{
   font-family: 'Permanent Marker', cursive;
 }
 #homeHeadGallery ul{
-  margin: 0px auto;
-  padding: 0px;
-  width: 1200px;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
 }
 #homeHead3{
   height: 400px;
   width: 100%;
 }
-#homeHeadGallery{
-  height: 1000px;
-}
 #homeHeadAbout{
   background-image: url(images/sky.png);
   background-size: cover;
-  margin-top: -2%;
-  margin-left: -8px;
-  margin-right: -8px;
 }
 #homeHeader{
   background-image: url(images/camera2.png);
   background-size: cover;
-  margin-top: -2%;
-  margin-left: -8px;
-  margin-right: -8px;
 }
 #homeHeader img{
   width: 100%;
 }
 #galleryBtn{
-  background: #420094;
-  width: 140px;
+  background: #2F358E;
+  width: 200px;
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 100px;
   border-radius: 10px;
   color: #ffffff;
   margin-left: auto;
   margin-right: auto;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  font-size: 1em;
+  font-family: 'Comfortaa', cursive;
 }
 #galleryBtn:hover{
   background: grey;
 }
-#galleryBtn a{
-  color: #ffffff;
-  text-decoration: none;
-}
+
 #service1{
   font-size: 1.15em;
   font-family: 'Comfortaa', cursive;
   margin-bottom: 80px;
   background: #283B54;
   border-radius: 10px;
-  margin-top: 10px;
   margin-top: 100px;
   padding-top: 10px;
 }
 #service1 p{
   color: white;
   background-color:#555596;
-  margin-bottom: 80px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 #service1 h4{
   text-align: center;
@@ -341,9 +335,6 @@ footer a{
 #service2 p{
   color: white;
   background-color:#555596;
-  margin-bottom: 80px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 #service2 h4{
   text-align: center;
@@ -361,9 +352,6 @@ footer a{
 #service3 p{
   color: white;
   background-color:#555596;
-  margin-bottom: 80px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 #service3 h4{
   text-align: center;
@@ -381,9 +369,6 @@ footer a{
 #service4 p{
   color: white;
   background-color:#555596;
-  margin-bottom: 100px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 #service4 h4{
   text-align: center;
@@ -427,12 +412,17 @@ footer a{
   height: 500px;
   margin: 0;
 }
-
-
-
-
-
-
+#wrapper h1{
+  color: #2F358E;
+}
+#email_prompt{
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 97%;
+  color: #ff0000;
+  font-family: 'Comfortaa', cursive;
+}
 
 @media screen and (min-width:310px){
    #wrapper{
@@ -452,24 +442,13 @@ footer a{
   }
   #miniGallery li{
     width: 120px;
-
   }
   #miniGallery ul{
     width: 245px;
   }
-  #homeHeadGallery li{
-    width: 120px;
-    height: auto;
-  }
   #homeHeadGallery img{
     width: 100%;
     height: auto;
-  }
-  #homeHeadGallery ul{
-    width: 100%;
-  }
-  #homeHeadGallery{
-    height: 900px;
   }
   #service1{
     margin-bottom: 140px;
@@ -506,19 +485,9 @@ footer a{
   #miniGallery ul{
     width: 320px;
   }
-  #homeHeadGallery ul{
-    width: 100%;
-  }
-  #homeHeadGallery li{
-    width: 145px;
-    height: auto;
-  }
   #homeHeadGallery img{
     width: 100%;
     height: auto;
-  }
-  #homeHeadGallery{
-    height: 1100px;
   }
 
 }
@@ -539,7 +508,6 @@ footer a{
   #miniGallery{
     height: 600px;
   }
-
   #homeHeadGallery img{
     width: 100%;
     height: auto;
@@ -547,12 +515,6 @@ footer a{
   #homeHeadGallery li{
     width: 180px;
     height: auto;
-  }
-  #homeHeadGallery ul{
-    width: 100%;
-  }
-  #homeHeadGallery{
-    height: 1300px;
   }
 }
 
@@ -578,9 +540,6 @@ footer a{
   #miniGallery{
     height: 750px;
   }
-  #homeHeadGallery ul{
-    width: 100%;
-  }
   #homeHeadGallery li{
     width: 250px;
     height: auto;
@@ -589,19 +548,18 @@ footer a{
     width: 100%;
     height: auto;
   }
-  #homeHeadGallery{
-    height: 1650px;
-  }
 }
 
 /*Mobile menu query*/
-@media screen and (max-width:700px){
+@media screen and (max-width:768px){
+  #homeHead{
+    margin-top: 90px;
+  }
 .burger-nav{
   display: block;
   height: 40px;
   width: 30px;
   float: right;
-  //background: url(images/ui/burger.png) no-repeat 98% center;
   cursor: pointer;
 }
 nav ul{
@@ -628,7 +586,6 @@ nav ul li{
   width: 100%;
 }
 nav ul li a{
-    border-bottom: 1px solid #404040;
     display: block;
     margin: 0;
     color: #420094;
@@ -648,21 +605,12 @@ body{
 }
 
 @media screen and (min-width:760px){
-  #wrapper{
-    width: 700px;
-  }
   #homeHeadGallery img{
     width: 100%;
     height: auto;
   }
-  #homeHeadGallery ul{
-    width: 700px;
-  }
   #homeHeadGallery li{
     width: 220px;
-  }
-  #homeHeadGallery{
-    height: 1100px;
   }
   #miniGallery ul{
     width: 100%;
@@ -676,24 +624,29 @@ body{
   #miniGallery{
     height: 850px;
   }
-
+  #homeHeader{
+    margin-top: 150px;
+  }
+  #homeHeadService{
+    margin-top: 150px;
+  }
+  #wrapper{
+    margin-top: 170px;
+  }
+  #homeHeadAbout{
+    margin-top: 150px;
+  }
 }
 
   @media screen and (min-width:980px){
     #wrapper{
       width: 900px;
     }
-    #homeHeadGallery ul{
-      width: 800px;
-    }
     #homeHeadGallery img{
       width: 100%;
     }
     #homeHeadGallery li{
       width: 260px;
-    }
-    #homeHeadGallery{
-      height: 1350px;
     }
     #miniGallery ul{
       width: 100%;
@@ -705,12 +658,10 @@ body{
       height: 450px;
     }
     .form{
-      background: #555596;
-      height: 450px;
       margin-top: 20px;
       margin-bottom: 20px;
-      border-radius: 15px;
-      width: 40%;
+      border-radius: 5px;
+      max-width: 500px;
     }
   }
 
@@ -732,23 +683,15 @@ body{
         width: 230px;
         height: auto;
       }
-      #homeHeadGallery ul{
-        width: 1000px;
-      }
-      #homeHeadGallery{
-        height: 850px;
-      }
       #miniGallery li{
         width: 246px;
       }
 
       .form{
-        background: #555596;
-        height: 450px;
         margin-top: 20px;
         margin-bottom: 20px;
         border-radius: 15px;
-        width: 40%;
+        max-width: 500px;
       }
     }
 
@@ -770,22 +713,13 @@ body{
         width: 280;
         height: auto;
       }
-      #homeHeadGallery{
-        height: 1000px;
-      }
       #miniGallery li{
         width: 295px;
       }
-      #miniGallery ul{
-        width: 1200px;
-      }
 
       .form{
-        background: #555596;
-        height: 450px;
         margin-top: 20px;
         margin-bottom: 20px;
-        border-radius: 15px;
-        width: 40%;
+        max-width: 500px;
       }
     }

@@ -1,6 +1,4 @@
 <?php
-if(isset($_POST['email'])) {
-
     // Show the email being sent to and a subject for the message
     $email_to = "4ezmedia@gmail.com";
     $email_subject = "New Contact From Your Website";
@@ -92,8 +90,3 @@ $headers = 'From: '.$email_from."\r\n".
     <a href="index.html">Go Back To home</a>
   </body>
 </html>
-
-<?php
-
-}
-?>
